@@ -1,0 +1,17 @@
+{
+  "name": "motivator_extension",
+  "version": "1.0.0",
+  "description": "Motivator Extension\r This web application generates random quotes and uploads it to a chrome url overrider. Using a built-in chrome extension, users can select the types of quotes to generate to the overrider. This project is built using HTML, CSS, JavaScript, and Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "xlsx": "^0.18.5"
+  }
+}

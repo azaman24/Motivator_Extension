@@ -1,0 +1,222 @@
+:root {
+    --PrimaryFont: 'Roboto', sans-serif;
+    --SecondaryFont: 'Source Code Pro', monospace;
+
+    --lightMode: white;
+    --darkMode: rgb(42, 42, 42);
+    --lightButtonColor: #eaedef;
+    --darkButtonColor: rgb(55, 55, 55);
+
+    --lightTextColor: #00223e;
+    --darkTextColor: white;
+    --lightHoverTextColor: #3a79e5;
+    --darkHoverTextColor: grey;
+}
+
+.main {
+    margin-top: 75px;
+    text-align: center;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: var(--PrimaryFont);
+}
+
+body.lightMode {
+    background-color: var(--lightMode);
+    color: var(--lightTextColor);
+}
+
+body.darkMode {
+    background-color: var(--darkMode);
+    color: var(--darkTextColor);
+}
+
+.motivator {
+    margin-bottom: -1%;
+}
+
+button, .headerBtn, .searchInput {
+    background-color: var(--lightButtonColor);
+    border: 1px solid #00223e;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    color: var(--lightTextColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 7.5px 15px;
+}
+
+body.darkMode button, body.darkMode .headerBtn, body.darkMode .searchInput {
+    background-color: var(--darkButtonColor);
+    border: 1px solid var(--darkTextColor);
+    color: var(--darkTextColor);
+}
+
+button:hover, .headerBtn:hover, .searchInput:hover {
+    background-color: var(--lightHoverColor);
+}
+
+body.darkMode button:hover, body.darkMode .headerBtn:hover, body.darkMode .searchInput:hover {
+    background-color: var(--darkHoverColor);
+}
+
+.btn-play {
+    border: none;
+    background-color: transparent;
+    color: var(--lightTextColor);
+    transition: color 0.2s ease;
+}
+
+body.darkMode .btn-play {
+    color: var(--darkTextColor);
+}
+
+.btn-play:hover {
+    color: var(--lightHoverTextColor);
+}
+
+body.darkMode .btn-play:hover {
+    color: var(--darkHoverTextColor);
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logoImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.displayMode {
+    width: 20px;
+    height: 20px;
+}
+
+.displayMode path {
+    transition: fill 0.3s;
+}
+
+body.lightMode .displayMode path {
+    fill: var(--lightTextColor);
+}
+
+body.darkMode .displayMode path {
+    fill: var(--darkTextColor);
+}
+
+.headerBtn, .btn-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 7.5px 15px;
+}
+
+h1 {
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+body.lightMode h1 {
+    color: var(--lightTextColor);
+}
+
+body.darkMode h1 {
+    color: var(--darkTextColor);
+}
+
+.searchInput {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 24px;
+}
+
+.quoteContainer {
+    font-size: 16px;
+    padding: .3rem 0.75rem;
+    border-radius: 20px;
+    font-family: var(--heading-font);
+    transition: .2s;
+}
+
+main .english-ayah,
+main .arabic-ayah,
+main .surah-info {
+    margin-top: 20px;
+}
+
+.surah-info {
+    margin-bottom: 1.5%;
+}
+
+main .quoteContainer {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+    max-height: 600px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.quote {
+    color: orange;
+}
+
+.buttons {
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+main .quoteContainer .buttons .btn-play {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+main .quoteContainer .buttons .btn-play:hover {
+    box-shadow: 0px 0px 5px 0px rgba(28, 28, 28, 0.3);
+}
+
+.image-container {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Optional: border styling */
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image behaves like a block element */
+}
+
+@media only screen and (max-width: 600px) {
+    .heading h1 {
+        font-size: 28px;
+    }
+    main .container {
+        margin-right: 50px;
+    }
+}

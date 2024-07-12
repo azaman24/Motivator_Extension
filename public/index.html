@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/Motivator_Logo.jpeg" type="x-icon"/>
+</head>
+<body>
+    <div class="header">
+        <button class="headerBtn" id="toggleMode">
+            <img src="images/lightMode.svg" class="displayMode" id="lightIcon">
+            <img src="images/darkMode.svg" class="displayMode" id="darkIcon">
+        </button>
+        <button class="headerBtn" id="gmailBtn">Gmail</button>
+        <button class="headerBtn" id="driveBtn">Drive</button>
+    </div>
+    <div class="main">
+        <!-- <div class="image-container"> -->
+        <!-- </div> -->
+        <img class="logoImg" src="images/Motivator_Logo.jpeg" width=10%/>
+        <h1 class="motivator">Motivator</h1>
+        <h3 id="quote"></h3>
+        <h5 id="source"></h5>
+        <input type="text" class="searchInput" id="searchInput" placeholder="Search Google"/>
+        <!-- <div class="quoteContainer">
+            <h2 id="quote"></h2>
+            <h2 class="arabic-ayah"></h2>
+            <h3 class="english-ayah"></h3>
+            <span class="surah-info">
+                Quran • Surah 
+                <span class="surah-name"></span> • Ayat
+                <span class="ayah-number"></span> 
+            </span>
+            <div class="buttons">
+                <audio src="https://cdn.islamic.network/quran/audio/128/ar.alafasy/262.mp3"></audio> 
+                <a href="#" class="btn-play"><i class="playButton"></i>Play</a> 
+            </div>
+            <input type="text" class="searchInput" id="searchInput" placeholder="Search Google"/>
+        </div> -->
+    </div>
+    <script src="../server.js"></script>
+    <script src="script.js"></script>
+    <!-- <script src="backEnd/quran.js"></script> -->
+    <!-- <script src="readExcel.js"></script> -->
+</body>
+</html>

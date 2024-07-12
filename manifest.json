@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Motivator",
+    "main": "server.js",
+    "permissions": ["activeTab", "http://localhost:3000/"],
+    "action": {
+        "default_popup": "public/extension.html",
+        "default_icon": "public/images/icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "public/index.html"
+    }
+}
